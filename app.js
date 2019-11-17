@@ -1,5 +1,5 @@
 var express = require('express');
-const people = require('./people.json'); // Copia il file people.json dentro la variabile people
+const lego = require('./lego.json'); // Copia il file people.json dentro la variabile people
 
 var app = express();
 app.set('view engine', 'pug');   // Dico a express di usare pug come motore di template e quindi andare 
@@ -12,16 +12,16 @@ app.use(express.static(__dirname + '/public')); // Dico ad express dove recupera
 app.get('/', function (req, res) {
   res.render('index', {
    title: 'Homepage',
-   people: people.profiles // Leggo dalla variabile "people" il vettore "profiles" 
-                           // e lo passo alla pagina "index.pug"
+   scatole: lego.confezioni // Leggo dalla variabile "lego" il vettore "scatole" 
+                                  // e lo passo alla pagina "index.pug"
  });
 });
 
 app.get('/profile', (req, res) => {
-  const person = people.profiles.find((p) => p.id === req.query.id);
-  res.render('profile', {
-    title: `About ${person.firstname} ${person.lastname}`,
-    person,
+  const istruzione = lego.confezioni.find((p) => p.id === req.query.id);
+  res.render('istruzioni', {
+    title: `About ${istruzione.Name}`,
+    istruzione,
   });
 });
 

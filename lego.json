@@ -1,0 +1,33 @@
+{
+ "confezioni": [
+   {
+     "Number": "LEGO 0375",
+     "Theme": "Castle",
+     "Name": "Yellow Castle",
+     "Year": "1978",
+     "imgScatolaSrc": "YellowCastle.jpg",
+     "imgIstruzioneSrc": "YellowCastle_1.jpg",
+     "id": "375"
+   },
+
+   {
+     "Number": "LEGO 6080",
+     "Theme": "Castle",
+     "Name": "Kings Castle",
+     "Year": "1984",
+     "imgScatolaSrc": "KingsCastle.jpg",
+     "imgIstruzioneSrc": "KingsCastle_1.jpg",
+     "id": "680"
+   },
+
+   {
+     "Number": "LEGO 6035",
+     "Theme": "Castle",
+     "Name": "Castle Guard",
+     "Year": "1987",
+     "imgScatolaSrc": "CastleGuard.jpg",
+     "imgIstruzioneSrc": "CastleGuard_1.jpg",
+     "id": "6035"
+   }
+ ]
+}

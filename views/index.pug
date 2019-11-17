@@ -1,0 +1,19 @@
+doctype html
+html
+ head
+   title #{title}
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   article.container
+     each scatola in scatole
+       div.scatola
+         div.scatola-image(style=`background: url('/images/${scatola.imgSrc}') top center no-repeat; background-size: cover;`)
+         h2.scatola-name
+           | #{scatola.firstname} #{scatola.lastname}
+         a(href=`/istruzioni?id=${scatola.id}`)
+           | View Profile
+
+
