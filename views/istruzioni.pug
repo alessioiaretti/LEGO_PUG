@@ -7,14 +7,14 @@ html
  body
    header.header
          h1 #{title}
-   div.profile
-     div.profile-image(style=`background: url('/images/${person.imgSrc}') top center no-repeat; background-size: cover;`)
-     div.profile-details
-       h1.profile-name
-         | #{person.firstname} #{person.lastname}
-       h2.profile-tagline
-         | #{person.tagline}
-       p.profile-bio
-         | #{person.bio}
-       a.button.button-twitter(href=`${person.twitter}`)
-         | Follow me on Twitter
+   div.istruzione
+     div.istruzione-image(style=`background: url('/images/${istruzione.imgIstruzioneSrc}') top center no-repeat; background-size: cover;`)
+     div.istruzione-details
+       p
+         | Set Number: <B style="color: red;"> #{istruzione.Number} </B>
+       p
+         | Set Theme: <B style="color: red;"> #{istruzione.Theme} </B>
+       p
+         | Set Name: <B style="color: red;"> #{istruzione.Name} </B>
+       p
+         | Set Year: <B style="color: red;"> #{istruzione.Year} </B>

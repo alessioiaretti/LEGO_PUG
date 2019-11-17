@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
  });
 });
 
-app.get('/profile', (req, res) => {
+app.get('/istruzioni', (req, res) => {
   const istruzione = lego.confezioni.find((p) => p.id === req.query.id);
   res.render('istruzioni', {
     title: `About ${istruzione.Name}`,

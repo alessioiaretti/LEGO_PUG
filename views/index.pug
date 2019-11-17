@@ -11,11 +11,11 @@ html
      h3 #{testa}
    br
    article.container
-     each scatola in scatole
+     each elemento in scatole
        div.scatola
-         div.scatola-image(style=`background: url('/images/${scatola.imgScatolaSrc}') top center no-repeat; background-size: cover;`)
+         div.scatola-image(style=`background: url('/images/${elemento.imgScatolaSrc}') top center no-repeat; background-size: cover;`)
          h2.scatola-name
-           a(href=`/istruzioni?id=${scatola.id}`)
-             | #{scatola.Name}
+           a(href=`/istruzioni?id=${elemento.id}`)
+             | #{elemento.Name}
 
 
