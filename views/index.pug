@@ -6,14 +6,16 @@ html
    meta(name="viewport" content="width=device-width, initial-scale=1")
  body
    header.header
-         h1 #{title}
+     h1 #{title}
+   div.scatola
+     h3 #{testa}
+   br
    article.container
      each scatola in scatole
        div.scatola
-         div.scatola-image(style=`background: url('/images/${scatola.imgSrc}') top center no-repeat; background-size: cover;`)
+         div.scatola-image(style=`background: url('/images/${scatola.imgScatolaSrc}') top center no-repeat; background-size: cover;`)
          h2.scatola-name
-           | #{scatola.firstname} #{scatola.lastname}
-         a(href=`/istruzioni?id=${scatola.id}`)
-           | View Profile
+           a(href=`/istruzioni?id=${scatola.id}`)
+             | #{scatola.Name}
 
 

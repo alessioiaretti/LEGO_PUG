@@ -11,7 +11,8 @@ app.use(express.static(__dirname + '/public')); // Dico ad express dove recupera
 
 app.get('/', function (req, res) {
   res.render('index', {
-   title: 'Homepage',
+   title: 'L E G O',
+   testa: 'SCEGLI IL TUO CASTELLO',
    scatole: lego.confezioni // Leggo dalla variabile "lego" il vettore "scatole" 
                                   // e lo passo alla pagina "index.pug"
  });
